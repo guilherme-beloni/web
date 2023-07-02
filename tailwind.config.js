@@ -8,8 +8,10 @@ export default {
     extend: {},
       colors: {
         background: '#09090A',
-        zinc: '#1C1C1C',
-        zincb: '#363636'
+        zinc: '#18181B',
+        zincb: '#070808',
+        violet700: '#7C3AED'
+
 
       },
 
