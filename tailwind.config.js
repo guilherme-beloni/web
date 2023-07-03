@@ -10,7 +10,10 @@ export default {
         background: '#09090A',
         zinc: '#18181B',
         zincb: '#070808',
-        violet700: '#7C3AED'
+        violet700: '#7C3AED',
+        zinc400: '#4F4F4F',
+        green600: '#00FF7F',
+        green500: '#7FFFD4'
 
 
       },

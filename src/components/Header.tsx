@@ -1,7 +1,8 @@
-
+import {NewHabitForm} from './NewHabitForm'
 import logoImage from "../assets/logo.svg";
 import { Plus, X } from "phosphor-react";
 import * as Dialog from "@radix-ui/react-dialog";
+
 
 export function Header() {
   return (
@@ -22,16 +23,26 @@ export function Header() {
 
         <Dialog.Portal>
           <Dialog.Overlay className="w-screen h-screen bg-zincb/80 fixed inset-0" />
-          <Dialog.Content className="border border-violet700 absolute p-10 bg-zincb rounded-2xl w-full max-w-md top-1/2 left-1/2 -translate-x-1/2 -translete-y-1/2">
+          <Dialog.Content className="border border-zincb absolute p-10 bg-zinc rounded-2xl w-full max-w-md top-1/2 left-1/2 -translate-x-1/2 -translete-y-1/2">
             <Dialog.Close className=" absolute right-6 top-6 text-zinc hover:border-violet700">
               <X size={24} aria-label='Fechar'/>
             </Dialog.Close>
-            Conteudo
+            
+            <Dialog.Title className="text-3xl leading-tight font-extrabold">
+              Criar Habito
+            </Dialog.Title>
+
+
+              <NewHabitForm/>
+
+              
+
+
           </Dialog.Content>
         </Dialog.Portal>
 
 
-      </Dialog.Root> 
+      </Dialog.Root>
     </div>
   );
 }
