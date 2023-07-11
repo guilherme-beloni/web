@@ -1,6 +1,8 @@
 import * as Popover from "@radix-ui/react-popover";
 import { ProgressBar } from "./ProgressBar";
 import clsx from "clsx";
+import * as Checkbox from '@radix-ui/react-checkbox'
+import { Check } from "phosphor-react";
 
 
 
@@ -33,6 +35,40 @@ export function HabitDay({ completed, amount } : HabitDayProps) {
             03/07
           </span>
           <ProgressBar progress={completedPercentage} />
+
+          <div className="mt-6 flex flex-col gap-3">
+              <Checkbox.Root className="flex items-center gap-3 group">
+
+                <div className="h-8 w-8 rounded-lg flex items-center justify-center bg-zinc border-2 border-zincb group-data-[state=checked]:bg-green600 group-data-[state=checked]:border-green600 ">
+                  <Checkbox.Indicator>
+                    <Check size={20} className="text-white"/>
+                  </Checkbox.Indicator>
+                </div>
+                
+                <span className="font-semibold text-xl text-white leading-tight group-data-[state=checked]:line-through group-data-[state=checked]:text-zinc400">Beber 2L de água</span>
+              </Checkbox.Root>
+              <Checkbox.Root className="flex items-center gap-3 group">
+
+                <div className="h-8 w-8 rounded-lg flex items-center justify-center bg-zinc border-2 border-zincb group-data-[state=checked]:bg-green600 group-data-[state=checked]:border-green600 ">
+                  <Checkbox.Indicator>
+                    <Check size={20} className="text-white"/>
+                  </Checkbox.Indicator>
+                </div>
+                
+                <span className="font-semibold text-xl text-white leading-tight group-data-[state=checked]:line-through group-data-[state=checked]:text-zinc400">Beber 2L de água</span>
+              </Checkbox.Root>
+              <Checkbox.Root className="flex items-center gap-3 group">
+
+                <div className="h-8 w-8 rounded-lg flex items-center justify-center bg-zinc border-2 border-zincb group-data-[state=checked]:bg-green600 group-data-[state=checked]:border-green600 ">
+                  <Checkbox.Indicator>
+                    <Check size={20} className="text-white"/>
+                  </Checkbox.Indicator>
+                </div>
+                
+                <span className="font-semibold text-xl text-white leading-tight group-data-[state=checked]:line-through group-data-[state=checked]:text-zinc400">Beber 2L de água</span>
+              </Checkbox.Root>
+          </div>
+
           <Popover.Arrow height={6} width={12} className="fill-zinc" />
         </Popover.Content>
       </Popover.Portal>
